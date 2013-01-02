@@ -29,7 +29,12 @@ class Installer extends LibraryInstaller
 	 */
 	public function getInstallPath(PackageInterface $package)
 	{
-		return 'application/'.$package->getPrettyName();
+		// strip the repo name off it if it's present
+		$name = $package->getPrettyName();
+		strpos($name, '/') !== false and $name = ltrim(strrchr($name, '/'), '/');
+
+		// and install the application in the application folder...
+		return 'application/'.$name;
 	}
 
 	/**
