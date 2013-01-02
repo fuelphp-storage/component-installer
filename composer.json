@@ -20,5 +20,8 @@
 	"autoload": {
 		"psr-0": { "FuelPHP\\AppInstaller": "src/" }
 	},
-	"minimum-stability": "dev"
+    "extra": {
+        "class": "FuelPHP\\AppInstaller\\Installer"
+    },
+    "minimum-stability": "dev"
 }
