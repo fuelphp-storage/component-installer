@@ -1,5 +1,5 @@
 # Foundation
 
-[![Build Status](https://travis-ci.org/fuelphp/common.png?branch=develop)](https://travis-ci.org/fuelphp/common)
+[![Build Status](https://travis-ci.org/fuelphp/app-installer.png?branch=develop)](https://travis-ci.org/fuelphp/app-installer)
 
-FuelPHP framework common package. Contains generic classes and helper methods.
+FuelPHP composer application installer. Aids in automatic installation of FuelPHP applications through Composer.
