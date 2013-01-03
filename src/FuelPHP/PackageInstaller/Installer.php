@@ -34,7 +34,7 @@ class Installer extends LibraryInstaller
 		strpos($name, '/') !== false and $name = ltrim(strrchr($name, '/'), '/');
 
 		// strip the fuelphp prefix is present
-		strpos($name, 'fuelphp-') == 0 and $name = substr($name, 8);
+		strpos($name, 'fuelphp-') === 0 and $name = substr($name, 8);
 
 		// and install the application in the application folder...
 		return 'packages/'.$name;
