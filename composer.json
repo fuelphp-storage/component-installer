@@ -1,9 +1,9 @@
 {
-	"name": "fuelphp/app-installer",
+	"name": "fuelphp/package-installer",
 	"type": "composer-installer",
-	"description": "FuelPHP application installer.",
-	"keywords": ["FuelPHP", "Application", "Installer"],
-	"homepage": "https://github.com/fuelphp/app-installer",
+	"description": "FuelPHP package installer.",
+	"keywords": ["FuelPHP", "Package", "Installer"],
+	"homepage": "https://github.com/fuelphp/package-installer",
 	"license": "MIT",
 	"authors": [
 		{
@@ -18,10 +18,10 @@
 		"mockery/mockery": "0.7.*"
 	},
 	"autoload": {
-		"psr-0": { "FuelPHP\\AppInstaller": "src/" }
+		"psr-0": { "FuelPHP\\PackageInstaller": "src/" }
 	},
     "extra": {
-        "class": "FuelPHP\\AppInstaller\\Installer"
+        "class": "FuelPHP\\PackageInstaller\\Installer"
     },
     "minimum-stability": "dev"
 }
