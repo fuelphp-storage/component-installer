@@ -1,5 +1,6 @@
-# Foundation
+[![Build Status](https://travis-ci.org/fuelphp/app-installer.png?branch=master)](https://travis-ci.org/fuelphp/app-installer)
 
-[![Build Status](https://travis-ci.org/fuelphp/app-installer.png?branch=develop)](https://travis-ci.org/fuelphp/app-installer)
+# Application installer
+
 
 FuelPHP composer application installer. Aids in automatic installation of FuelPHP applications through Composer.
