@@ -8,7 +8,7 @@
  * @copyright  2010 - 2013 Fuel Development Team
  */
 
-namespace Fuel\ApplicationInstaller;
+namespace Fuel\ComponentInstaller;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
@@ -16,9 +16,9 @@ use Composer\Installer\LibraryInstaller;
 /**
  * Installer
  *
- * Custom composer installer to make sure app's end up in ./application
+ * Custom composer installer to make sure app's end up in ./components
  *
- * @package  Fuel\ApplicationInstaller
+ * @package  Fuel\ComponentInstaller
  *
  * @since  2.0.0
  */
@@ -36,12 +36,12 @@ class Installer extends LibraryInstaller
 		// strip the fuelphp prefix if present
 		strpos($name, 'fuelphp-') === 0 and $name = substr($name, 8);
 
-		// strip the application suffix if present
-		$pos = strpos($name, '-application');
+		// strip the component suffix if present
+		$pos = strpos($name, '-component');
 		$pos !== false and $name = substr($name, 0, $pos);
 
-		// and install the application in the application folder...
-		return 'apps/'.$name;
+		// and install the application component in the components folder...
+		return 'components/'.$name;
 	}
 
 	/**
@@ -49,6 +49,6 @@ class Installer extends LibraryInstaller
 	 */
 	public function supports($packageType)
 	{
-		return 'fuelphp-application' === $packageType;
+		return 'fuelphp-component' === $packageType;
 	}
 }
